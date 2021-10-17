@@ -1,0 +1,376 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+section {
+  margin: 0px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1330px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.section__wrapper {
+  border-bottom: 2px solid #BDBDBD;
+  padding-bottom: 41px;
+}
+
+.header-top {
+  text-align: center;
+  padding: 16px 0;
+  background-color: #000;
+}
+
+.header-top__link {
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.header-content {
+  background-color: #996b60;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.menu {
+  padding: 25px 0 31px;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__list-link {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header-info {
+  padding-top: 180px;
+  padding-bottom: 100px;
+}
+
+.header-info__content {
+  max-width: 650px;
+  margin-left: auto;
+  padding-left: 60px;
+}
+
+.header-info__title {
+  font-family: "Liberation Serif", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 73px;
+  line-height: 96px;
+  color: #ffffff;
+  margin-bottom: 34px;
+}
+
+.header-info__text {
+  font-size: 18px;
+  line-height: 32px;
+  color: #fff;
+  margin-bottom: 46px;
+}
+
+.header-info__link {
+  padding: 18px 52px 20px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  border: 1px solid #ffffff;
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+.info {
+  padding: 55px 0px 0px;
+}
+
+.info__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info__item {
+  width: 330px;
+  padding: 4px 21px 0 21px;
+  text-align: center;
+}
+
+.info__item-text {
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 36px;
+}
+
+.ingredient {
+  padding-top: 104px;
+  text-align: center;
+}
+
+.ingredient__title {
+  max-width: 699px;
+  font-family: "Liberation Serif", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 64px;
+  line-height: 80px;
+  color: #000000;
+  margin: 0 auto 24px;
+}
+
+.ingredient__link {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 82px;
+  display: inline-block;
+}
+
+.ingredient__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 80px;
+}
+
+.ingredient__card {
+  width: 382px;
+}
+
+.ingredient__card-box {
+  position: relative;
+}
+
+.ingredient__card--link--active {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: #191919;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 23px;
+  right: 19px;
+}
+
+.ingredient__card-info {
+  padding-top: 19px;
+}
+
+.ingredient__card-link {
+  font-family: "Liberation Serif", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  color: #000;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.ingredient__card-text {
+  font-size: 16px;
+  line-height: 28px;
+  color: #000;
+  margin-bottom: 27px;
+}
+
+.ingredient__card-shop {
+  padding: 18px 48px 20px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  background-color: #000;
+}
+
+.intro {
+  padding-top: 60px;
+}
+
+.intro__article-link {
+  display: inline-block;
+  margin-bottom: 55px;
+}
+
+.intro__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.intro__info-link {
+  font-family: "Liberation Serif", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 53px;
+  line-height: 80px;
+  color: #000;
+}
+
+.intro__info-text {
+  max-width: 548px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000;
+}
+
+.drink {
+  padding-top: 60px;
+}
+
+.drink__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 55px;
+          column-gap: 55px;
+}
+
+.drink__info {
+  margin-top: auto;
+}
+
+.drink__item {
+  margin-bottom: 25px;
+}
+
+.drink__item:last-child {
+  margin-bottom: 0;
+}
+
+.drink__item-text {
+  font-size: 18px;
+  line-height: 32px;
+  color: #000;
+  margin-top: 19px;
+}
+
+.drink__item-link {
+  font-family: "Liberation Serif", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  color: #000;
+}
+
+.drink__item-title {
+  font-family: "Liberation Serif", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000;
+}
+
+.drink__item-title span {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
