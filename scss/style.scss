@@ -237,4 +237,73 @@
     }
   }
 }
+.review {
+  background-color: #000;
+  padding: 50px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__card {
+    width: 34%;
+    padding: 46px 15px 104px;
+    text-align: center;
+  }
+  &__card-text {
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+  }
+  &__card-subtitle {
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  &__card-name {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #8a8a8a;
+  }
+}
+.differently {
+  padding: 60px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 110px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+  &__info-title {
+    font-family: "Liberation Serif", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
+    color: #000;
+  }
+  &__info-text {
+    margin-top: auto;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000;
+  }
+  &__info-link {
+    width: fit-content;
+    margin-bottom: 5px;
+    margin-top: 35px;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000;
+  }
+}
 @import "media";
