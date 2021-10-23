@@ -727,6 +727,180 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media (max-width: 768px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: purple;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 35px;
+    padding: 20px 0px;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: all 0.9s;
+    transition: all 0.9s;
+  }
+  .menu .menu__list--btn {
+    -webkit-transform: inherit;
+            transform: inherit;
+    -webkit-transition: all 0.9s;
+    transition: all 0.9s;
+    opacity: 0.9;
+    background-color: currentcolor;
+  }
+  .menu__list-item--logo {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .menu__btn {
+    display: block;
+    margin-left: auto;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .header-content {
+    background-position-x: center;
+    background-position-y: inherit;
+    padding-bottom: 20px;
+    background-size: cover;
+  }
+  .header-info {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .header-info__content {
+    padding-left: 0px;
+    width: 100%;
+    margin-left: 0;
+  }
+  .header-info__title {
+    font-size: 46px;
+    line-height: 71px;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  .header-info__link {
+    background-color: violet;
+    border: none;
+    color: #fff;
+  }
+  .ingredient {
+    padding: 25px 0px;
+  }
+  .ingredient__title {
+    font-size: 49px;
+    line-height: 67px;
+    text-align: left;
+  }
+  .ingredient__link {
+    margin-bottom: 50px;
+  }
+  .ingredient__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 50px;
+  }
+  .ingredient__card {
+    margin: 0 auto;
+  }
+  .intro__info-link {
+    font-size: 44px;
+    line-height: 58px;
+  }
+  .intro__info-text {
+    max-width: 478px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000;
+  }
+  .drink {
+    padding-top: 30px;
+  }
+  .drink__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 15px;
+  }
+  .drink__inner-img {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .review {
+    padding: 25px 0;
+  }
+  .review__card {
+    padding: 40px 15px 50px;
+  }
+  .differently {
+    padding: 50px 0;
+  }
+  .differently__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+  }
+  .differently__info-title {
+    font-size: 38px;
+    line-height: 62px;
+    margin-bottom: 15px;
+  }
+  .differently__info-text {
+    font-size: 17px;
+  }
+  .footer-top {
+    padding-bottom: 40px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 25px;
+  }
+  .footer-top__content {
+    margin: 0 auto;
+  }
+  .footer-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    row-gap: 15px;
+    text-align: center;
+  }
+  .footer-bottom__info {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+  .footer-bottom__info-item {
+    margin-right: 0;
+  }
+  .footer-bottom__span {
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 375px) {
   .menu {
     display: -webkit-box;
@@ -924,9 +1098,6 @@ body {
         flex-wrap: wrap;
     row-gap: 20px;
     padding-bottom: 50px;
-  }
-  .footer-top__list--middle {
-    padding-left: 0;
   }
   .footer-bottom {
     -webkit-box-orient: vertical;
