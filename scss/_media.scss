@@ -1,3 +1,122 @@
+@media (max-width: 1024px) {
+  .menu {
+    display: flex;
+    &__list {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      background-color: purple;
+      display: flex;
+      flex-direction: column;
+      row-gap: 35px;
+      padding: 20px 0px;
+      transform: translateX(-100%);
+      transition: all 0.9s;
+    }
+    .menu__list--btn {
+      transform: inherit;
+      transition: all 0.9s;
+      //background-color: seagreen;
+      opacity: 0.9;
+      background-color: currentcolor;
+    }
+    &__list-item--logo {
+      order: -1;
+    }
+    &__btn {
+      display: block;
+      margin-left: auto;
+      border: none;
+      padding: 0;
+      background-color: transparent;
+      cursor: pointer;
+      z-index: 1;
+    }
+  }
+  .header-content {
+    background-position-x: center;
+    background-position-y: inherit;
+    padding-bottom: 20px;
+    background-size: cover;
+  }
+  .header-info {
+    padding-top: 100px;
+    padding-bottom: 75px;
+    &__content {
+      padding-left: 0px;
+      width: 100%;
+      margin-left: 0;
+    }
+    &__title {
+      font-size: 46px;
+      line-height: 71px;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    &__link {
+      background-color: violet;
+      border: none;
+      color: #fff;
+    }
+  }
+  .ingredient {
+    padding: 25px 0px;
+    &__title {
+      font-size: 49px;
+      line-height: 67px;
+      text-align: left;
+    }
+    &__link {
+      margin-bottom: 50px;
+    }
+    &__inner {
+      flex-direction: column;
+      row-gap: 50px;
+    }
+    &__card {
+      margin: 0 auto;
+    }
+  }
+  .drink {
+    padding-top: 30px;
+    &__inner {
+      flex-direction: column;
+      row-gap: 15px;
+    }
+    &__inner-img {
+      order: -1;
+    }
+  }
+  .review {
+    &__card {
+      padding: 46px 15px 50px;
+    }
+  }
+  .differently {
+    &__inner {
+      align-items: center;
+      column-gap: 60px;
+    }
+    &__info-title {
+      font-size: 54px;
+      line-height: 67px;
+      margin-bottom: 15px;
+    }
+  }
+  .footer-top {
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+  }
+  .footer-bottom {
+    width: 100%;
+    justify-content: center;
+    &__info {
+      margin-right: 0;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .menu {
     display: flex;
@@ -137,7 +256,7 @@
       justify-content: space-around;
       width: 100%;
     }
-    &__info-item{
+    &__info-item {
       margin-right: 0;
     }
     &__span {
